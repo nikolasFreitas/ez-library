@@ -4,7 +4,7 @@ import Header from './Components/Header';
 import Home from './screens/Home';
 
 const AppRouter = () => (
-  <Router>
+  <Router basename='/ez-library'>
     <Header />
     <Switch>
       <Route path="/" exact component={Home} />
