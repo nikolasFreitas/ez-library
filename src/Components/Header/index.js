@@ -10,7 +10,7 @@ const Header = ({ location }) => {
           <Styled.Title to="/">Ez Library</Styled.Title>
         </Styled.Box>
       </Styled.UpperHeadBox>
-      {location.pathname != '/' && (
+      {location.pathname !== '/' && (
         <Styled.NavBarContainer>
           <Styled.Box>
             <Styled.NavBarBox>
