@@ -1,6 +1,5 @@
 import Styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import books from '../../img/books.png';
 
 export const Container = Styled.div`
   padding: 30px 15px 15px;
@@ -61,7 +60,7 @@ export const Title = Styled.p`
   width: calc(100% - 1px);
   margin: 0px 1px;
   position: absolute;
-  top: 15px;
+  top: 30px;
   left: 0;
   font-size: 24px;
   text-align: center; 
@@ -72,6 +71,7 @@ export const Title = Styled.p`
 
 export const NavContent = Styled.p`
   width: 100%;
+  height: 90px;
   background: white;
   position: absolute;
   text-align: justify;
