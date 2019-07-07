@@ -29,6 +29,7 @@ export const Title = Styled(Link)`
 	text-decoration: none;
 	color: white;
 	margin: 0px auto;
+	font-weight: bolder;
 `;
 
 export const NavBarBox = Styled.div`
