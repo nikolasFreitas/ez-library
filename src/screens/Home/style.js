@@ -6,6 +6,10 @@ export const Container = Styled.div`
   height: calc(100vh - 40px);
   width: 100%;
   background: #ecf0f1;
+
+  @media screen and (max-width: 700px) {
+    height: auto;
+  }
 `;
 
 export const BoxContent = Styled.div`
@@ -17,6 +21,11 @@ export const BoxContent = Styled.div`
   max-width: 960px;
   margin: 0px auto;
   border: 0px;
+
+  @media screen and (max-width: 700px) {
+    flex-flow: column;
+    display: flex-block;
+  }
 `;
 
 export const ImageBackground = Styled.img`
@@ -34,6 +43,11 @@ export const ImageBackground = Styled.img`
   filter: grayscale(80%) blur(5px);
   
   transition: all ease-in-out .3s;
+
+  @media screen and (max-width: 700px) {
+    filter: none;
+    background-size: 100%;
+  }
 `;
 
 export const Navigation = Styled(Link)`
@@ -50,9 +64,17 @@ export const Navigation = Styled(Link)`
   }
   
   &:hover ${ImageBackground} {
-      filter: none;
-      background-size: 100%;
-    }
+    filter: none;
+    background-size: 100%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    height: 300px;
+    border-right: 0px;
+    margin-bottom: 30px;
+    background-size: 100%;
+  }
   
 `;
 
@@ -67,6 +89,10 @@ export const Title = Styled.p`
   font-weight: bolder;
   background: white;
   color: #2980b9;
+
+  @media screen and (max-width: 700px) {
+    top: 0;
+  }
 `;
 
 export const NavContent = Styled.p`
