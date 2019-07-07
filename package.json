@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "moment": "^2.24.0",
+    "query-string": "^6.8.1",
     "react": "^16.8.6",
     "react-dates": "^20.2.5",
     "react-dom": "^16.8.6",
@@ -16,7 +17,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix:other": "yarn prettier --write",
+    "fix:js": "yarn test:js --fix",
+    "fix": "yarn fix:js && yarn fix:other",
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\""
   },
   "eslintConfig": {
     "extends": "react-app"
