@@ -10,15 +10,15 @@ const Header = ({ location }) => {
           <Styled.Title to="/">Ez Library</Styled.Title>
         </Styled.Box>
       </Styled.UpperHeadBox>
-      {location.pathname != '/' && (
+      {location.pathname !== '/' && (
         <Styled.NavBarContainer>
           <Styled.Box>
             <Styled.NavBarBox>
-              <Styled.NavLink to="teste" selected={location.pathname === '/teste'}>
-                Teste
+              <Styled.NavLink to="procurar-livros" selected={location.pathname === '/procurar-livros'}>
+                procurar livros
               </Styled.NavLink>
-              <Styled.NavLink to="get" selected={location.pathname === '/get'}>
-                get
+              <Styled.NavLink to="meus-livros" selected={location.pathname === '/meus-livros'}>
+                meus livros
               </Styled.NavLink>
             </Styled.NavBarBox>
           </Styled.Box>
