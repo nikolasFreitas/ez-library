@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import * as Styled from './style';
 
-const Table = ({ header, data, data_enum, onCLick }) => (
+const Table = memo(({ header, data, data_enum, onCLick }) => (
   <Styled.S_table>
     <Styled.S_Thead>
       <Styled.S_tr>
@@ -21,7 +21,7 @@ const Table = ({ header, data, data_enum, onCLick }) => (
         ))}
     </Styled.S_Tbody>
   </Styled.S_table>
-);
+));
 
 Table.propTypes = {
   header: PropTypes.arrayOf(PropTypes.string).isRequired,
