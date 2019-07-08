@@ -23,6 +23,7 @@ const BookList = memo(() => {
     <Styled.Container>
       <Styled.BoxContent>
         <Select options={book_options} onChange={setSelect} value={select} />
+        <Styled.Title>Nosso acervo</Styled.Title>
         <Styled.TableWrapper>
           <Table header={header} data={options} data_enum={data_enum} onCLick={setSelect} />
         </Styled.TableWrapper>

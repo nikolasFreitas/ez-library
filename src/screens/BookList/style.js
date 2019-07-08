@@ -29,3 +29,7 @@ export const RentedText = Styled.p`
 export const AvailableText = Styled.p`
   color: #2ecc71;
 `;
+
+export const Title = Styled.h1`
+
+`;
