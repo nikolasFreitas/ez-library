@@ -13,8 +13,8 @@ const BookList = memo(() => {
   const [options, setOptions] = useState(
     transformToComponent(
       book_options,
-      <Styled.AvailableText>Disponível</Styled.AvailableText>,
       <Styled.RentedText>Alugado</Styled.RentedText>,
+      <Styled.AvailableText>Disponível</Styled.AvailableText>,
       'returned'
     )
   );
