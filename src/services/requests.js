@@ -1,8 +1,13 @@
 import { firebaseDb } from '../config/firebase';
 
 const FirebaseRequest = () => ({
-  getBooks: async () => {
-    const result = await firebaseDb.ref('/books').once('value');
+  getBooks: () => {
+    const result = firebaseDb.ref('/books').once('value');
+    return result;
+  },
+
+  getUserBooks: () => {
+    const result = firebaseDb.ref('/user').once('value');
     return result;
   },
 
