@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Header from './Components/Header';
 import Home from './screens/Home';
 import BookList from './screens/BookList';
+import UserBooks from './screens/UserBooks';
 
 const AppRouter = () => (
   <Router basename='/ez-library'>
@@ -10,6 +11,7 @@ const AppRouter = () => (
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path='/procurar-livros' exact component={BookList} />
+      <Route path='/meus-livros' exact component={UserBooks} />
     </Switch>
   </Router>
 );
