@@ -1,4 +1,4 @@
-import Styled from 'styled-components';
+import Styled, { keyframes } from 'styled-components';
 
 export const Container = Styled.div`
   padding: 30px 15px 15px;
@@ -32,4 +32,10 @@ export const AvailableText = Styled.p`
 
 export const Title = Styled.h1`
 
+`;
+
+export const LoaderWrapper = Styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
