@@ -5,6 +5,7 @@
   "homepage": "https://nikolasfreitas.github.io/ez-library/",
   "dependencies": {
     "axios": "^0.19.0",
+    "firebase": "^6.2.4",
     "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
     "query-string": "^6.8.1",

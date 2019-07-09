@@ -11,7 +11,6 @@ export const S_table = Styled(Table)`
 export const S_Thead = Styled(Thead)``;
 
 export const S_tr = Styled(Tr)`
-  
 `;
 
 export const S_Tbody = Styled(Tbody)`
@@ -23,7 +22,7 @@ export const S_Tbody = Styled(Tbody)`
 export const S_th = Styled(Th)`
   border-right: 1px solid black;
   background: #bdc3c7;
-  padding: 5px 0px;
+  padding: 10px 0px;
 
   &:last-child {
     border-right: 0px;
