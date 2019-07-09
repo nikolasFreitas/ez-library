@@ -5,7 +5,7 @@ import Home from './screens/Home';
 import BookList from './screens/BookList';
 
 const AppRouter = () => (
-  <Router>
+  <Router basename='/ez-library'>
     <Header />
     <Switch>
       <Route path="/" exact component={Home} />
