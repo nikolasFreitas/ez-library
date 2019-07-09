@@ -38,4 +38,5 @@ export const LoaderWrapper = Styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 8%;
 `;
